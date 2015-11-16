@@ -1,0 +1,199 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  padding: 0;
+	margin: 0;
+}
+
+h1,h2,p,span{
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	background: #262526;
+	overflow: hidden;
+}
+
+button{
+	cursor: pointer;
+	outline: none;
+}
+
+.inactive{
+	opacity: .5;
+	cursor: default;
+}
+
+.players-container{
+	overflow: hidden;
+}
+.start-container{
+	width: 400px;
+	height: 400px;
+	-ms-transform: rotate(45deg); 
+    -webkit-transform: rotate(45deg); 
+    transform: rotate(45deg);	
+    background: #FFD9C4;
+	margin: 90px auto 0 auto;
+}
+.bleh{
+	width: 400px;
+	height: 400px;
+	-ms-transform: rotate(-45deg); 
+    -webkit-transform: rotate(-45deg); 
+    transform: rotate(-45deg);	
+    padding-top: 120px;
+}
+
+.start-container p,
+.start-container h2{
+	text-align: center;
+	color: #262526;
+}
+
+.out{
+	right: -50% !important;
+}
+
+.player-bust{
+	position: absolute;
+	background:#262526;
+	color:#FFD9C4;
+	z-index: 99;
+	font-size: 1.5em;
+	line-height: 50px;
+	text-align: center;
+	bottom:0;
+	right:0;
+	height: 50px;
+	width: 50%;
+	-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.start-btn{
+	width: 100px;
+	height: 50px;
+	margin: 20px 0 0 70px;
+	border: none;
+	border-radius: 30px;
+	border:3px solid #262526;
+	background: none;
+	color: #262526;
+}
+
+.game-container{
+  height:100vh;
+  width:455px;
+  margin:0 auto;
+  position:relative;
+  overflow: hidden;
+  	background: #FFD9C4;
+
+}
+
+.dealer-container{
+	height: 80px;
+	padding-top: 10px;
+	background: #262526;
+	color:#FFD9C4;
+	text-align: center;
+}
+
+.players-hand{
+	height: calc(100vh - 130px);
+	width: 100%;
+	background: #FFD9C4;
+	border: 3px solid #262526;
+	display: inline-block;
+}
+.players-hand h2,
+.players-hand p{
+	text-align: center;
+}
+
+.card{
+	border:1px solid #262526;
+	border-radius: 4px;
+	height: 100px;
+	width: 70px;
+	position: relative;
+	display: inline-block;
+	margin: 30px 0 0 30px;
+	font-size: 2em;
+}
+.card p{
+	padding: 5px 0 0 5px;
+}
+
+.card span{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
+.player-result{
+	padding: 10px 0 10px 10px;
+	border:3px solid #FFD9C4;
+}
+.player-result:nth-child(even){
+	background: #262526;
+	color: #FFD9C4;
+}
+.play-button-container{
+  position:absolute;
+  width:100%;
+  bottom:0;
+}
+.play-btn{
+  width:50%;
+  height:50px;
+  border:none;
+  font-size:1.4em;
+  float:left;
+}
+#pass{
+  background:#FFDC6A;
+}
+#hit{
+  background:#36FFA8;
+}
+.show-div{
+  display: block !important;
+}
+
+.hide-div{
+	display: none;
+}
+
+@media screen and (max-width: 500px){
+	.start-container{
+		margin:0;
+		width: 100%;
+		-ms-transform: rotate(0deg); 
+    	-webkit-transform: rotate(0deg); 
+    	transform: rotate(0deg);	
+	}
+	.bleh{
+		-ms-transform: rotate(0deg); 
+    	-webkit-transform: rotate(0deg); 
+    	transform: rotate(0deg);
+		width: 300px;
+		margin: 0 auto;
+	}
+	.start-btn{
+	  display: block;
+	  margin: 30px auto 0 auto;
+	  width: 150px;
+	  height: 60px;
+	}
+}
+@media screen and (max-width: 455px){
+	.game-container{
+	  width:100%;
+	}
+}

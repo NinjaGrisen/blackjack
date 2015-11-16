@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Black Jack</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+
+
+	<div class="button-container start-container" id="start-container">
+    	<div class="bleh">
+    	<h2>Play Black Jack</h2>
+      	<p><span class="all-players">0</span>/5 players</p>
+		    <button class="button start-btn" id="addPlayer">Add player</button>
+		    <button class="button start-btn" id="startGame">Start game</button>
+	    </div>
+    </div>
+
+	<div class="game-container hide-div">
+	    <div class="dealer-container">
+	     	<h2>Dealer's hand</h2>
+	      	<p>Value: <span class="dealers-hand">0</span></p>
+	    </div>
+
+
+   
+   	 	<div id="players-container">
+   	 		<div class="player-bust out">
+   	 			<p>Bust</p>
+   	 		</div>
+    		<div class="players-hand">
+    			<h2>Player <span class="player-name"> 1 </span></h2> 
+    			<p>Value: <span class="hand-value"> 20 </span></p>
+    			<div class="players-card-hand"></div>
+    		</div>
+
+    		<div class="end-result">
+    		</div>
+    	</div>
+    	<div class="play-button-container button-container">
+      		<button class="button play-btn" id="pass">Pass</button>
+      		<button class="button play-btn" id="hit">Hit</button>
+      	</div>
+    </div>
+
+<script src="javascript/mustache.js"></script>
+<script src="javascript/main.js"></script>
+</body>
+</html>
+
+
+<!-- 
+	   14	   -  	 10
+	Kristofer	    Alva
+						
+						-->
